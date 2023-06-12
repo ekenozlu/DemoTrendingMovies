@@ -10,7 +10,8 @@ In this demo app I created a application to show trending movies on Swift with S
 
 ## In this demo app I used and practiced:
 1. MVVM Structre
-2. SDWebImages, 3rd party package for handling images from web
+2. API Handling
+3. SDWebImages, 3rd party package for handling images from web
 
 ## Currently Working on
 1. Creating a full functional Movie Database application with MVVM Structure
