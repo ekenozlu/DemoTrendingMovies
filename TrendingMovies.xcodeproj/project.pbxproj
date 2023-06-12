@@ -21,6 +21,14 @@
 		636D06982A37474B002BE8A7 /* APICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636D06972A37474B002BE8A7 /* APICaller.swift */; };
 		636D069A2A37478D002BE8A7 /* MovieModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636D06992A37478D002BE8A7 /* MovieModel.swift */; };
 		636D069C2A374EA7002BE8A7 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636D069B2A374EA7002BE8A7 /* Observable.swift */; };
+		636D06A02A375718002BE8A7 /* MainMovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636D069E2A375718002BE8A7 /* MainMovieCell.swift */; };
+		636D06A12A375718002BE8A7 /* MainMovieCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 636D069F2A375718002BE8A7 /* MainMovieCell.xib */; };
+		636D06A32A375B28002BE8A7 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636D06A22A375B28002BE8A7 /* UIViewExtension.swift */; };
+		636D06A52A375C10002BE8A7 /* MovieCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636D06A42A375C10002BE8A7 /* MovieCellViewModel.swift */; };
+		636D06A82A375F09002BE8A7 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 636D06A72A375F09002BE8A7 /* SDWebImage */; };
+		636D06AC2A377AF2002BE8A7 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636D06AA2A377AF2002BE8A7 /* DetailsViewController.swift */; };
+		636D06AD2A377AF2002BE8A7 /* DetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 636D06AB2A377AF2002BE8A7 /* DetailsViewController.xib */; };
+		636D06AF2A377C6C002BE8A7 /* DetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636D06AE2A377C6C002BE8A7 /* DetailsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +67,13 @@
 		636D06972A37474B002BE8A7 /* APICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICaller.swift; sourceTree = "<group>"; };
 		636D06992A37478D002BE8A7 /* MovieModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieModel.swift; sourceTree = "<group>"; };
 		636D069B2A374EA7002BE8A7 /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = SOURCE_ROOT; };
+		636D069E2A375718002BE8A7 /* MainMovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMovieCell.swift; sourceTree = "<group>"; };
+		636D069F2A375718002BE8A7 /* MainMovieCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainMovieCell.xib; sourceTree = "<group>"; };
+		636D06A22A375B28002BE8A7 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UIViewExtension.swift; path = TrendingMovies/View/MainMovieCell/UIViewExtension.swift; sourceTree = SOURCE_ROOT; };
+		636D06A42A375C10002BE8A7 /* MovieCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCellViewModel.swift; sourceTree = "<group>"; };
+		636D06AA2A377AF2002BE8A7 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		636D06AB2A377AF2002BE8A7 /* DetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailsViewController.xib; sourceTree = "<group>"; };
+		636D06AE2A377C6C002BE8A7 /* DetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				636D06A82A375F09002BE8A7 /* SDWebImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -153,6 +169,7 @@
 		636D06892A37339F002BE8A7 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				636D069D2A3756F3002BE8A7 /* MainMovieCell */,
 				636D065F2A372F36002BE8A7 /* LaunchScreen.storyboard */,
 			);
 			path = View;
@@ -162,6 +179,8 @@
 			isa = PBXGroup;
 			children = (
 				636D06932A3741DF002BE8A7 /* MainViewModel.swift */,
+				636D06A42A375C10002BE8A7 /* MovieCellViewModel.swift */,
+				636D06AE2A377C6C002BE8A7 /* DetailsViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -169,6 +188,7 @@
 		636D068B2A3733B0002BE8A7 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				636D06A92A377AD2002BE8A7 /* DetailsViewController */,
 				636D06842A373056002BE8A7 /* MainViewController */,
 			);
 			path = Controllers;
@@ -201,6 +221,7 @@
 		636D068F2A3733EF002BE8A7 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				636D06A22A375B28002BE8A7 /* UIViewExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -212,6 +233,24 @@
 				636D06972A37474B002BE8A7 /* APICaller.swift */,
 			);
 			path = Networking;
+			sourceTree = "<group>";
+		};
+		636D069D2A3756F3002BE8A7 /* MainMovieCell */ = {
+			isa = PBXGroup;
+			children = (
+				636D069E2A375718002BE8A7 /* MainMovieCell.swift */,
+				636D069F2A375718002BE8A7 /* MainMovieCell.xib */,
+			);
+			path = MainMovieCell;
+			sourceTree = "<group>";
+		};
+		636D06A92A377AD2002BE8A7 /* DetailsViewController */ = {
+			isa = PBXGroup;
+			children = (
+				636D06AA2A377AF2002BE8A7 /* DetailsViewController.swift */,
+				636D06AB2A377AF2002BE8A7 /* DetailsViewController.xib */,
+			);
+			path = DetailsViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,6 +269,9 @@
 			dependencies = (
 			);
 			name = TrendingMovies;
+			packageProductDependencies = (
+				636D06A72A375F09002BE8A7 /* SDWebImage */,
+			);
 			productName = TrendingMovies;
 			productReference = 636D06512A372F35002BE8A7 /* TrendingMovies.app */;
 			productType = "com.apple.product-type.application";
@@ -302,6 +344,9 @@
 				Base,
 			);
 			mainGroup = 636D06482A372F35002BE8A7;
+			packageReferences = (
+				636D06A62A375F09002BE8A7 /* XCRemoteSwiftPackageReference "SDWebImage" */,
+			);
 			productRefGroup = 636D06522A372F35002BE8A7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -320,7 +365,9 @@
 			files = (
 				636D06612A372F36002BE8A7 /* LaunchScreen.storyboard in Resources */,
 				636D06882A373088002BE8A7 /* MainViewController.xib in Resources */,
+				636D06AD2A377AF2002BE8A7 /* DetailsViewController.xib in Resources */,
 				636D065E2A372F36002BE8A7 /* Assets.xcassets in Resources */,
+				636D06A12A375718002BE8A7 /* MainMovieCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,7 +392,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				636D06A52A375C10002BE8A7 /* MovieCellViewModel.swift in Sources */,
+				636D06A32A375B28002BE8A7 /* UIViewExtension.swift in Sources */,
 				636D069C2A374EA7002BE8A7 /* Observable.swift in Sources */,
+				636D06A02A375718002BE8A7 /* MainMovieCell.swift in Sources */,
+				636D06AF2A377C6C002BE8A7 /* DetailsViewModel.swift in Sources */,
 				636D069A2A37478D002BE8A7 /* MovieModel.swift in Sources */,
 				636D06552A372F35002BE8A7 /* AppDelegate.swift in Sources */,
 				636D06982A37474B002BE8A7 /* APICaller.swift in Sources */,
@@ -353,6 +404,7 @@
 				636D06962A374638002BE8A7 /* NetworkConstants.swift in Sources */,
 				636D06872A373088002BE8A7 /* MainViewController.swift in Sources */,
 				636D06942A3741DF002BE8A7 /* MainViewModel.swift in Sources */,
+				636D06AC2A377AF2002BE8A7 /* DetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -688,6 +740,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		636D06A62A375F09002BE8A7 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		636D06A72A375F09002BE8A7 /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 636D06A62A375F09002BE8A7 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 636D06492A372F35002BE8A7 /* Project object */;
 }

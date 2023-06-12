@@ -10,6 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainViewController" customModule="TrendingMovies" customModuleProvider="target">
             <connections>
+                <outlet property="activityIndicator" destination="vdD-qp-TPb" id="ZD1-0c-EL0"/>
                 <outlet property="tableView" destination="o5L-nV-E4e" id="Dm4-yg-nHf"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -19,18 +20,24 @@
             <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="o5L-nV-E4e">
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="o5L-nV-E4e">
                     <rect key="frame" x="0.0" y="59" width="393" height="759"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                 </tableView>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="vdD-qp-TPb">
+                    <rect key="frame" x="178" y="407.66666666666669" width="37" height="37"/>
+                    <color key="color" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </activityIndicatorView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
+                <constraint firstItem="vdD-qp-TPb" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="4Gt-JD-a6T"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="o5L-nV-E4e" secondAttribute="bottom" id="DA3-RJ-qNN"/>
                 <constraint firstItem="o5L-nV-E4e" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="QBh-CJ-MfC"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="o5L-nV-E4e" secondAttribute="trailing" id="T74-rs-cbb"/>
                 <constraint firstItem="o5L-nV-E4e" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="Wsh-fz-WYI"/>
+                <constraint firstItem="vdD-qp-TPb" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="oJg-hR-3UK"/>
             </constraints>
             <point key="canvasLocation" x="138" y="21"/>
         </view>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetailsViewController" customModule="TrendingMovies" customModuleProvider="target">
+            <connections>
+                <outlet property="descriptionLabel" destination="3cN-dj-6dW" id="tle-AT-75v"/>
+                <outlet property="imageView" destination="gta-pl-UEg" id="RRw-Sv-kjd"/>
+                <outlet property="titleLabel" destination="41t-PG-txw" id="0mj-xI-IuA"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gta-pl-UEg">
+                    <rect key="frame" x="0.0" y="59" width="393" height="213"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Movie Title" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="41t-PG-txw">
+                    <rect key="frame" x="8" y="304" width="377" height="25.333333333333314"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Movie Description" lineBreakMode="tailTruncation" numberOfLines="22" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3cN-dj-6dW">
+                    <rect key="frame" x="8" y="345.33333333333331" width="377" height="19.333333333333314"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="gta-pl-UEg" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.25" id="45g-0z-TL6"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="41t-PG-txw" secondAttribute="trailing" constant="8" id="EdS-gD-Jmi"/>
+                <constraint firstItem="41t-PG-txw" firstAttribute="top" secondItem="gta-pl-UEg" secondAttribute="bottom" constant="32" id="LRy-hB-IWO"/>
+                <constraint firstItem="3cN-dj-6dW" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="8" id="Lhm-6L-YIw"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="gta-pl-UEg" secondAttribute="trailing" id="SjM-Be-rt6"/>
+                <constraint firstItem="41t-PG-txw" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="8" id="UJT-gP-1GU"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="3cN-dj-6dW" secondAttribute="trailing" constant="8" id="WbT-Tq-fSA"/>
+                <constraint firstItem="gta-pl-UEg" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="ibl-e2-3Wf"/>
+                <constraint firstItem="gta-pl-UEg" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="t3B-H8-HA0"/>
+                <constraint firstItem="3cN-dj-6dW" firstAttribute="top" secondItem="41t-PG-txw" secondAttribute="bottom" constant="16" id="wDT-xK-Myc"/>
+            </constraints>
+            <point key="canvasLocation" x="138" y="21"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
