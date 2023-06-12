@@ -20,6 +20,7 @@
 		636D06962A374638002BE8A7 /* NetworkConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636D06952A374638002BE8A7 /* NetworkConstants.swift */; };
 		636D06982A37474B002BE8A7 /* APICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636D06972A37474B002BE8A7 /* APICaller.swift */; };
 		636D069A2A37478D002BE8A7 /* MovieModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636D06992A37478D002BE8A7 /* MovieModel.swift */; };
+		636D069C2A374EA7002BE8A7 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636D069B2A374EA7002BE8A7 /* Observable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		636D06952A374638002BE8A7 /* NetworkConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConstants.swift; sourceTree = "<group>"; };
 		636D06972A37474B002BE8A7 /* APICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICaller.swift; sourceTree = "<group>"; };
 		636D06992A37478D002BE8A7 /* MovieModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieModel.swift; sourceTree = "<group>"; };
+		636D069B2A374EA7002BE8A7 /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,6 +185,7 @@
 		636D068D2A3733DB002BE8A7 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				636D069B2A374EA7002BE8A7 /* Observable.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -342,6 +345,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				636D069C2A374EA7002BE8A7 /* Observable.swift in Sources */,
 				636D069A2A37478D002BE8A7 /* MovieModel.swift in Sources */,
 				636D06552A372F35002BE8A7 /* AppDelegate.swift in Sources */,
 				636D06982A37474B002BE8A7 /* APICaller.swift in Sources */,
